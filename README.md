@@ -9,4 +9,3 @@ Scope:
 Technologies:
 * Python
 * Tweepy
-- 
