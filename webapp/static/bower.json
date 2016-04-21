@@ -1,0 +1,19 @@
+{
+  "name": "presidential-elections",
+  "homepage": "https://github.com/saurabhsood91/us-elections",
+  "authors": [
+    "saurabhsood91 <saurabhsood91@gmail.com>"
+  ],
+  "description": "Analysis of Presidential Elections",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
