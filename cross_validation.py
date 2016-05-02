@@ -55,7 +55,7 @@ if __name__ == "__main__":
 
     clf = Pipeline([('vect', TfidfVectorizer()), ('mnb', MultinomialNB())])
     clf.fit(tweets, target_labels)
-    # with open("clf", "w+") as clf_file:
-    #     pickle.dump(clf, clf_file)
+    with open("clf", "w+") as clf_file:
+        pickle.dump(clf, clf_file)
     cv_score = cross_val_score(clf, tweets, target_labels, cv=10, verbose=1)
     print "Accuracy List ", cv_score, " | Avg Accuracy ", np.mean(cv_score)
