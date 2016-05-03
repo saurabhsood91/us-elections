@@ -14,6 +14,14 @@ def choropleth_clinton():
 def choropleth_cruz():
     return render_template("cruz_choropleth.html")
 
+@app.route('/trumpchor')
+def choropleth_trump():
+    return render_template("trump_choropleth.html")
+
+@app.route('/sanderschor')
+def choropleth_sanders():
+    return render_template("sanders_choropleth.html")
+
 @app.route('/<sentiment>/<candidate>')
 def get_points_can_sent(sentiment, candidate):
     print sentiment
