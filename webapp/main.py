@@ -6,6 +6,14 @@ app = Flask(__name__)
 def hello_world():
     return render_template("index.html")
 
+@app.route('/clintonchor')
+def choropleth_clinton():
+    return render_template("clinton_choropleth.html")
+
+@app.route('/cruzchor')
+def choropleth_cruz():
+    return render_template("cruz_choropleth.html")
+
 @app.route('/<sentiment>/<candidate>')
 def get_points_can_sent(sentiment, candidate):
     print sentiment
